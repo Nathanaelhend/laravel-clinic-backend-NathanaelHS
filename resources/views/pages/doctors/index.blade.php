@@ -61,6 +61,7 @@
                                             <th>Email</th>
                                             <th>Phone</th>
                                             <th>Specialist</th>
+                                            <th>Photo</th>
                                             <th>Created At</th>
                                             <th>Action</th>
                                         </tr>
@@ -77,6 +78,9 @@
                                                 </td>
                                                 <td>
                                                     {{ $doctor->doctor_specialist }}
+                                                </td>
+                                                <td>
+                                                    <img src="{{ $doctor->photo }}" style="height: 150px; width: 200px" >
                                                 </td>
                                                 <td>{{ $doctor->created_at }}</td>
                                                 <td>
@@ -122,4 +126,5 @@
 
     <!-- Page Specific JS File -->
     <script src="{{ asset('js/page/features-posts.js') }}"></script>
+
 @endpush
